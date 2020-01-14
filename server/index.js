@@ -63,7 +63,9 @@ app.use("/api/word", require("./routes/word"));
 
 app.all("*", (_, res) => {
   res.sendFile(
-    express.static(path.resolve(path.join(__dirname, "..", "dist")))
+    express.static(
+      path.resolve(path.join(__dirname, "..", "dist", "index.html"))
+    )
   );
 });
 
