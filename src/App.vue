@@ -72,7 +72,7 @@ export default {
     ...mapActions(["set_Login"]),
     ...mapGetters(["get_Login"]),
     async logout() {
-      Axios.delete("http://localhost:3000/api/user/login", {
+      Axios.delete("/api/user/login", {
         withCredentials: true
       })
         .then(() => {
@@ -83,7 +83,7 @@ export default {
     }
   },
   created() {
-    Axios.get("http://localhost:3000/api/user/login", {
+    Axios.get("/api/user/login", {
       withCredentials: true
     })
       .then(r => {

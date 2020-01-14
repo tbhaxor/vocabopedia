@@ -53,7 +53,7 @@ export default {
           .update(this.password)
           .digest("base64");
       }
-      let r = await Axios.put("http://localhost:3000/api/user/profile", data, {
+      let r = await Axios.put("/api/user/profile", data, {
         withCredentials: true
       });
 
@@ -66,7 +66,7 @@ export default {
     }
   },
   created() {
-    Axios.get("http://localhost:3000/api/user/profile", {
+    Axios.get("/api/user/profile", {
       withCredentials: true
     })
       .then(r => {

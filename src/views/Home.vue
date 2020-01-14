@@ -30,7 +30,7 @@ import Axios from "axios";
 export default {
   data: () => ({ word: {} }),
   created() {
-    Axios.get("http://localhost:3000/api/word/random", {
+    Axios.get("/api/word/random", {
       withCredentials: true
     })
       .then(r => {

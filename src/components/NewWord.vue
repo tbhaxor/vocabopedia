@@ -27,7 +27,7 @@ export default {
       try {
         this.classes["is-loading"] = true;
         let r = await Axios.post(
-          "http://localhost:3000/api/word",
+          "/api/word",
           { word: this.word },
           { withCredentials: true }
         );

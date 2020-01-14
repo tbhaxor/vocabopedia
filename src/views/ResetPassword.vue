@@ -33,7 +33,7 @@ export default {
   methods: {
     async send_password() {
       Axios.post(
-        "http://localhost:3000/api/user/forgot-password",
+        "/api/user/forgot-password",
         { email: this.x },
         { withCredentials: true }
       )

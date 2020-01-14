@@ -65,7 +65,7 @@ export default {
   },
   created() {
     this.loading = true;
-    Axios.get("http://localhost:3000/api/word", { withCredentials: true })
+    Axios.get("/api/word", { withCredentials: true })
       .then(r => {
         this.set_Data(r.data.words);
         this.loading = false;

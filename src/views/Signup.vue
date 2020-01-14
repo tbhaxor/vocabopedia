@@ -54,7 +54,7 @@ export default {
             .digest("base64")
         };
         let r = await Axios.post(
-          "http://localhost:3000/api/user/register",
+          "/api/user/register",
           data,
           { withCredentials: true }
         );
@@ -73,7 +73,7 @@ export default {
     }
   },
   created() {
-    Axios.get("http://localhost:3000/api/user/login", {
+    Axios.get("/api/user/login", {
       withCredentials: true
     }).then(r => {
       this.set_Login(r.data.status);
