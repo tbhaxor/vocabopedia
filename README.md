@@ -2,7 +2,7 @@
 
 > Your personalized vocabulary database.
 
-Vocabopedia is a centralized application to store, find, and mantain a list of words you have added to retrieve and learn afterwards.
+Vocabopedia is a centralized application to store, find, and maintain a list of words you have added to retrieve and learn afterwards.
 
 ### Why I have created this?
 
