@@ -1,6 +1,6 @@
 # [Vocabopedia](http://vocabopedia.tk)
 
-> Your personalized vocabulary database.
+> Your personalized vocabulary database. **NOT MAINTAINED!!!**
 
 Vocabopedia is a centralized application to store, find, and maintain a list of words you have added to retrieve and learn afterwards.
 
